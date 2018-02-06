@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Montserrat);
+      @import url(https://fonts.googleapis.com/css?family=);
+
+      body,html {
+        font-family: 'Montserrat';
+        background-color: #1b1c28;
+      }
+      .remark-code, .remark-inline-code { font-family: ''; }
+
+      .inverse {
+        background: #272822;
+        color: #d6d6d6;
+        text-shadow: 0 0 20px #333;
+      }
+      .inverse h1, .inverse h2 {
+        color: #f3f3f3;
+        line-height: 0.8em;
+      }
+
+      .bluegray{
+        color: #F5FBFB;
+      }
+      .skyblue{
+        color: #8fc2fa;
+      }
+      .blue{
+        color: #008bf7;
+      }
+      .cobalt{
+        color: #465bfd;
+      }
+      .pink{
+        color: #ff6481;
+      }
+      .orange{
+        color: #ffa264;
+      }
+      .yellow{
+        color: #ffe19d;
+      }
+
+      .avatar {
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+      }
+
+      a, a:hover, a:link, a:visited{
+        color: #8fc2fa;
+        text-decoration: none;
+      }
+
+      .left-column {
+        color: #777;
+        width: 30%;
+        height: 92%;
+        float: left;
+      }
+      .right-column {
+        width: 65%;
+        float: right;
+        padding-top: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+name: inverse
+class: center, middle, inverse
+
+Introduction to
+
+# <b class="skyblue">R</b><b class="pink">A</b><b class="orange">P</b><b class="yellow">P</b>
+
+( <small><u class="skyblue">R</u>apid <u class="pink">A</u>pplication
+<u class="orange">P</u>rototyping to <u class="yellow">P</u>roduction</small> )
+
+Dawn of choreographed microservices.
+
+---
+
+class: inverse
+
+.left-column[
+### Author
+]
+.right-column[
+
+<img class="avatar" src="https://en.gravatar.com/userimage/42375270/118a75abe4d56e7c97b192683b02cfa3.jpg?size=200&style=circle">
+
+# Steve Peak
+
+Founder of Codecov and Asyncy.
+
+github.com / stevepeak
+]
+
+---
+
+class: center, middle, inverse
+
+### Application development is <b class="yellow">flawed</b>.
+
+---
+
+class: center, middle, inverse
+
+Reason #1
+
+### <b class="skyblue">Logic</b> and <b class="pink">code</b> are coupled.
+
+---
+
+class: center, middle, inverse
+
+Reason #2
+
+### <b class="orange">Prototyping</b> is far from <b class="yellow">production</b>.
+
+---
+
+class: center, middle, inverse
+
+Reason #3
+
+### <b class="skyblue">Devops</b> is difficult.
+
+---
+
+class: center, middle, inverse
+
+## Architecture <b class="yellow">flaws</b>.
+
+---
+
+class: center, middle, inverse
+
+### <b class="orange">Monoliths</b> are globs of tape and glue.
+
+One stack with language restrictions.
+
+Difficult to scale properly.
+
+High techniqual debt.
+
+---
+
+class: center, middle, inverse
+
+### <b class="skyblue">Orchestrating microservices</b> sucks.
+
+Focus on architecture vs application design.
+
+Hard to avoid service coupling.
+
+Data-flow is not transparent.
+
+---
+
+class: center, middle, inverse
+
+### So... what now?
+
+---
+
+class: center, middle, inverse
+
+## Choreographed microservices.
+
+---
+
+class: center, middle, inverse
+
+### Where does
+
+---
+
+class: center, middle, inverse
+
+Goal #1
+
+## Seperate <b class="skyblue">logic</b> from <b class="pink">code</b>.
+
+---
+
+class: center, middle, inverse
+
+Goal #2
+
+## Integrated <b class="orange">service</b> <b class="yellow">discovery</b>.
+
+---
+
+class: center, middle, inverse
+
+Goal #3
+
+## Batteries included <b class="skyblue">platform</b>.
+
+---
+
+class: center, middle, inverse
+
+## Meet Storyscript
+
+A syntax-light logic-focused expressive language<br>
+for rapid prototyping and choreographing microservice.
+
+
+---
+
+class: center, middle, inverse
+
+# Application Backend
+
+<!--
+
+Example
+
+-->
+
+---
+
+class: center, middle, inverse
+
+# Cron and Automation
+
+<!--
+
+Example
+
+-->
+
+---
+
+class: center, middle, inverse
+
+# Slack Bot
+
+<!--
+
+Example
+
+-->
+
+---
+
+class: center, middle, inverse
+
+### <b class="skyblue">Logic</b> is written as stories.
+
+Portable and version controlled.
+
+Built-in expressive syntax.
+
+Transparent operations.
+
+Easy to refactor.
+
+---
+
+class: center, middle, inverse
+
+### <b class="pink">Code</b> is issolated in mircoservices.
+
+Specialized operations.
+
+Any language.
+
+No coupling.
+
+Reusable.
+
+---
+
+class: center, middle, inverse
+
+### <b class="skyblue">Logic</b> and <b class="pink">code</b> seperated. Check.
+
+next
+
+### Integrated <b class="orange">service</b> <b class="yellow">discovery</b>.
+
+---
+
+class: center, middle, inverse
+
+### Imagine a better <b class="skyblue">Docker Hub</b>.
+
+Aggregated, cross-application metrics.
+
+Environment and port mapping.
+
+Manifest of service functions.
+
+Playground for testing.
+
+---
+
+class: center, middle, inverse
+
+### <b class="orange">Service</b> <b class="yellow">discovery</b>. Check.
+
+next
+
+### Batteries included <b class="skyblue">platform</b>.
+
+---
+
+class: center, middle, inverse
+
+### <b class="orange">Engine</b> to execute <b class="skyblue">stories</b>.
+
+Robust container orchestration.
+
+Rolling deployments.
+
+No vendor-lockin.
+
+Cloud agnostic.
+
+---
+
+class: center, middle, inverse
+
+### Sexy <b class="pink">dev tools</b>.
+
+Atom IDE plugin with discovery and autocomplete.
+
+Integrated CI/CD pipelines.
+
+Complete CLI tooling.
+
+GitHub Integration.
+
+---
+
+class: center, middle, inverse
+
+-- Put it all together --
+
+
+---
+
+class: center, middle, inverse
+
+Oh, and it's got to be
+
+# 100% Open Source
+
+---
+
+class: center, middle, inverse
+
+Introducing
+
+# Asyncy
+
+The platform for building applications 100x faster<br>
+with choreographed microservices written as stories.
+
+First stories then code.
+
+---
+
+
+class: center, middle, inverse
+
+Join our story at
+
+## [asyncy.com](https://asyncy.com)
+
+[github.com / asyncy](https://github.com/asyncy)
+
+<br>
+
+<b class="pink">We are hiring!</b>
+
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create({
+        slideNumberFormat: ''
+      });
+      slideshow.gotoSlide(9)
+    </script>
+  </body>
+</html>
