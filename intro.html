@@ -9,9 +9,10 @@
 
       body,html {
         font-family: 'Montserrat';
-        background-color: #1b1c28;
       }
-      .remark-code, .remark-inline-code { font-family: ''; }
+      .remark-code, .remark-inline-code {
+        font-family: '';
+      }
 
       .inverse {
         background: #272822;
@@ -43,6 +44,12 @@
       }
       .yellow{
         color: #ffe19d;
+      }
+      .lgreen{
+        color: #B3F494;
+      }
+      .dgreen{
+        color: #16AD3B;
       }
 
       .avatar {
@@ -122,7 +129,7 @@ class: center, middle, inverse
 
 Reason #2
 
-### <b class="orange">Prototyping</b> is far from <b class="yellow">production</b>.
+### <b class="lgreen">Prototyping</b> is far from <b class="orange">production</b>.
 
 ---
 
@@ -130,7 +137,7 @@ class: center, middle, inverse
 
 Reason #3
 
-### <b class="skyblue">Devops</b> is difficult.
+### <b class="dgreen">Devops</b> is difficult.
 
 ---
 
@@ -178,7 +185,13 @@ class: center, middle, inverse
 
 class: center, middle, inverse
 
-### Where does
+Choreographed microservices are a level above orchestration.
+
+The choreography is application logic.
+
+The microservices are application code.
+
+Your application is an orchestra. Instruments are microservices.
 
 ---
 
@@ -391,7 +404,7 @@ Join our story at
       var slideshow = remark.create({
         slideNumberFormat: ''
       });
-      slideshow.gotoSlide(9)
+      slideshow.gotoSlide(12)
     </script>
   </body>
 </html>
