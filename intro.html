@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Title</title>
+    <title>Asyncy and the dawn of choreographed microservices.</title>
+    <meta property="og:url" content="https://decks.asyncy.com">
+    <meta property="og:site_name" content="Asyncy">
+    <meta property="og:title" content="Write stories then code.">
     <meta charset="utf-8">
     <style>
       @import url(https://fonts.googleapis.com/css?family=Montserrat);
-      @import url(https://fonts.googleapis.com/css?family=);
 
       body,html {
         font-family: 'Montserrat';
+        font-size: 1.3em;
+      }
+      .remark-container{
+        background: #1b1c28;
+      }
+      .remark-slide-scaler{
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
       }
       .remark-code, .remark-inline-code {
         font-family: '';
       }
 
-      .inverse {
-        background: #272822;
+      .remark-slide-content {
+        background: #1b1c28;
         color: #d6d6d6;
         text-shadow: 0 0 20px #333;
       }
@@ -45,13 +56,15 @@
       .yellow{
         color: #ffe19d;
       }
-      .lgreen{
+      .olive{
         color: #B3F494;
       }
       .dgreen{
         color: #16AD3B;
       }
-
+      .example{
+        margin-bottom: -20px;
+      }
       .avatar {
         border-radius: 50%;
         -moz-border-radius: 50%;
@@ -80,208 +93,110 @@
     <textarea id="source">
 
 name: inverse
-class: center, middle, inverse
+class: center, middle
 
-Introduction to
+<img src="asyncy.png" width="450">
 
-# <b class="skyblue">R</b><b class="pink">A</b><b class="orange">P</b><b class="yellow">P</b>
+<br>
 
-( <small><u class="skyblue">R</u>apid <u class="pink">A</u>pplication
-<u class="orange">P</u>rototyping to <u class="yellow">P</u>roduction</small> )
+The dawn of choreographed microservices.
+---
 
-Dawn of choreographed microservices.
+class: center, middle
+
+### Software development <b class="yellow">today</b>.
 
 ---
 
-class: inverse
-
-.left-column[
-### Author
-]
-.right-column[
-
-<img class="avatar" src="https://en.gravatar.com/userimage/42375270/118a75abe4d56e7c97b192683b02cfa3.jpg?size=200&style=circle">
-
-# Steve Peak
-
-Founder of Codecov and Asyncy.
-
-github.com / stevepeak
-]
-
----
-
-class: center, middle, inverse
-
-### Application development is <b class="yellow">flawed</b>.
-
----
-
-class: center, middle, inverse
-
-Reason #1
-
-### <b class="skyblue">Logic</b> and <b class="pink">code</b> are coupled.
-
----
-
-class: center, middle, inverse
-
-Reason #2
-
-### <b class="lgreen">Prototyping</b> is far from <b class="orange">production</b>.
-
----
-
-class: center, middle, inverse
-
-Reason #3
-
-### <b class="dgreen">Devops</b> is difficult.
-
----
-
-class: center, middle, inverse
-
-## Architecture <b class="yellow">flaws</b>.
-
----
-
-class: center, middle, inverse
+class: center, middle
 
 ### <b class="orange">Monoliths</b> are globs of tape and glue.
 
-One stack with language restrictions.
+<!-- By definition, one stack and one primary langauge.
 
 Difficult to scale properly.
 
-High techniqual debt.
+High techniqual debt. -->
 
 ---
 
-class: center, middle, inverse
+class: center, middle
 
-### <b class="skyblue">Orchestrating microservices</b> sucks.
+### <b class="skyblue">Microservices</b> are architecture nightmares.
 
-Focus on architecture vs application design.
+<!-- Forces focus on architecture vs application design.
 
 Hard to avoid service coupling.
 
-Data-flow is not transparent.
+??? -->
 
 ---
 
-class: center, middle, inverse
+class: center, middle
 
-### So... what now?
-
----
-
-class: center, middle, inverse
-
-## Choreographed microservices.
+### What does the <b class="yellow">future</b> hold?
 
 ---
 
-class: center, middle, inverse
+class: center, middle
 
-Choreographed microservices are a level above orchestration.
+Introducing
 
-The choreography is application logic.
-
-The microservices are application code.
-
-Your application is an orchestra. Instruments are microservices.
+## <b class="olive">Choreographed microservices.</b>
 
 ---
 
-class: center, middle, inverse
+class: middle, center
 
-Goal #1
-
-## Seperate <b class="skyblue">logic</b> from <b class="pink">code</b>.
+#### An environment of intelligently <b class="skyblue">orchestrated microservice</b><br>governed by a <b class="pink">program of high-level logic</b>.
 
 ---
 
-class: center, middle, inverse
+class: center, middle
 
-Goal #2
-
-## Integrated <b class="orange">service</b> <b class="yellow">discovery</b>.
+### Let's review the goals.
 
 ---
 
-class: center, middle, inverse
+class: middle
 
-Goal #3
+#### Separate <b class="skyblue">logic</b> from <b class="pink">code</b>.
 
-## Batteries included <b class="skyblue">platform</b>.
+#### Rapidly <b class="olive">prototype</b> into <b class="orange">production</b>.
 
----
+#### <b class="yellow">Automate</b> orchestration to reduce <b class="pink">devops</b>.
 
-class: center, middle, inverse
+#### Integrated <b class="skyblue">service discovery</b> in development and production.
 
-## Meet Storyscript
+#### Reduce, reuse, and recycle services <b class="orange">reducing technical debt</b>.
 
-A syntax-light logic-focused expressive language<br>
-for rapid prototyping and choreographing microservice.
-
+#### Logging, monitoring, and debugging <b class="olive">built-in</b>.
 
 ---
 
-class: center, middle, inverse
+class: center, middle
 
-# Application Backend
-
-<!--
-
-Example
-
--->
+### So, what does this look like?
 
 ---
 
-class: center, middle, inverse
-
-# Cron and Automation
-
-<!--
-
-Example
-
--->
-
----
-
-class: center, middle, inverse
-
-# Slack Bot
-
-<!--
-
-Example
-
--->
-
----
-
-class: center, middle, inverse
+class: center, middle
 
 ### <b class="skyblue">Logic</b> is written as stories.
 
 Portable and version controlled.
 
-Built-in expressive syntax.
-
 Transparent operations.
+
+Expressive syntax.
 
 Easy to refactor.
 
 ---
 
-class: center, middle, inverse
+class: center, middle
 
-### <b class="pink">Code</b> is issolated in mircoservices.
+### <b class="pink">Code</b> is developed as mircoservices.
 
 Specialized operations.
 
@@ -293,21 +208,11 @@ Reusable.
 
 ---
 
-class: center, middle, inverse
+class: center, middle
 
-### <b class="skyblue">Logic</b> and <b class="pink">code</b> seperated. Check.
+### <b class="skyblue">Service Discovery</b>
 
-next
-
-### Integrated <b class="orange">service</b> <b class="yellow">discovery</b>.
-
----
-
-class: center, middle, inverse
-
-### Imagine a better <b class="skyblue">Docker Hub</b>.
-
-Aggregated, cross-application metrics.
+Aggregated, cross-application metrics and logging.
 
 Environment and port mapping.
 
@@ -317,17 +222,7 @@ Playground for testing.
 
 ---
 
-class: center, middle, inverse
-
-### <b class="orange">Service</b> <b class="yellow">discovery</b>. Check.
-
-next
-
-### Batteries included <b class="skyblue">platform</b>.
-
----
-
-class: center, middle, inverse
+class: center, middle
 
 ### <b class="orange">Engine</b> to execute <b class="skyblue">stories</b>.
 
@@ -341,11 +236,11 @@ Cloud agnostic.
 
 ---
 
-class: center, middle, inverse
+class: center, middle
 
 ### Sexy <b class="pink">dev tools</b>.
 
-Atom IDE plugin with discovery and autocomplete.
+IDE plugin for service discovery.
 
 Integrated CI/CD pipelines.
 
@@ -355,56 +250,102 @@ GitHub Integration.
 
 ---
 
-class: center, middle, inverse
+class: center, middle
 
--- Put it all together --
-
-
----
-
-class: center, middle, inverse
-
-Oh, and it's got to be
-
-# 100% Open Source
+### All in a <b class="skyblue">free and open source</b> platform.
 
 ---
 
-class: center, middle, inverse
+class: center, middle
 
 Introducing
 
-# Asyncy
+<img src="asyncy.png" width="450">
 
-The platform for building applications 100x faster<br>
-with choreographed microservices written as stories.
+<small>The choreographed microservice platform<br>for rapid application development.</small>
 
-First stories then code.
+#### Write stories, then code.
+
+---
+
+class: center, bottom
+
+## Meet Storyscript
+
+Syntax-light for readability.
+
+<img src="application.png" width="600" class="example">
+
+---
+
+class: center, bottom
+
+## Marketing Automation
+
+Social media. User retention. Campaign logic.
+
+<img src="automation.png" width="600" class="example">
+
+---
+
+class: center, bottom
+
+## Devops
+
+Chat ops. Continuous-delivery. Cron jobs.
+
+<img src="integration.png" width="600" class="example">
+
+<!--
+.left[
+```python
+event user-signup as user
+
+    mailchimp send --template "welcome" --to user.email
+
+    in 5 days
+        if user.number_of_orders is 0
+            handler = twitter find user.email
+            twitter tweet '@{{handler}} use "firstorder" at checkout for 20% off.'
+```
+]
+-->
 
 ---
 
 
-class: center, middle, inverse
+class: center, middle
 
-Join our story at
+### Join our story.
 
-## [asyncy.com](https://asyncy.com)
+https://asyncy.com
 
 [github.com / asyncy](https://github.com/asyncy)
 
-<br>
-
-<b class="pink">We are hiring!</b>
-
-
     </textarea>
-    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    <script src="remark.min.js">
     </script>
     <script>
       var slideshow = remark.create({
-        slideNumberFormat: ''
+        slideNumberFormat: '<a href="/"><img src="logo.svg" width="50"></a>'
       });
-      slideshow.gotoSlide(12)
+      slideshow.gotoSlide(1)
+      var page = 0;
+      slideshow.on('showSlide', function (slide) {
+        var now = slide.getSlideIndex();
+        if ( now > page ){
+          gtag('event', 'show_slide', {'event_label': 'forward', 'value': now});
+        } else {
+          gtag('event', 'show_slide', {'event_label': 'back', 'value': now});
+        }
+      });
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111475156-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-111475156-3');
     </script>
   </body>
 </html>

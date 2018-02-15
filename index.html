@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Asyncy and the dawn of choreographed microservices.</title>
+    <meta property="og:url" content="https://decks.asyncy.com">
+    <meta property="og:site_name" content="Asyncy">
+    <meta property="og:title" content="Write stories then code.">
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+      body,html {
+        font-family: 'Montserrat';
+        font-size: 1em;
+        background: #1b1c28;
+        color: #F5FBFB;
+      }
+      img{
+        margin-bottom: 60px;
+      }
+      .wrapper{
+        height: 100%;
+        margin: 10%;
+        text-align: center;
+      }
+
+      .card{
+        width: 600px;
+        margin: auto;
+        text-align: left;
+      }
+      .card:before{
+        content: '';
+        width: 100px;
+        display: block;
+      }
+      .card:nth-child(7n - 4):before {
+        border-top: 3px solid #F72C40;
+      }
+      .card:nth-child(7n - 3):before {
+        border-top: 3px solid #FFA264;
+      }
+      .card:nth-child(7n - 2):before {
+        border-top: 3px solid #FFE19D;
+      }
+      .card:nth-child(7n - 1):before {
+        border-top: 3px solid #B3F494;
+      }
+      .card:before {
+        border-top: 3px solid #16AD3B;
+      }
+      .card:nth-child(7n - 6):before {
+        border-top: 3px solid #8FC2FA;
+      }
+      .card:nth-child(7n - 5):before {
+        border-top: 3px solid #008BF7;
+      }
+      a, a:visited, a:hover, a:active{
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <img src="asyncy.png" width="450">
+
+      <div class="card">
+        <h2>The dawn of choreographed microservices.</h2>
+        <p>An introduction to choreographed microservices and Asyncy.</p>
+        <a href="intro.html">Begin</a>
+      </div>
+
+    </div>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111475156-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-111475156-3');
+    </script>
+  </body>
+</html>
